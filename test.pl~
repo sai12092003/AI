@@ -1,0 +1,5 @@
+col(apple,red).
+col(orange,orange).
+
+findcol(Fruit,Fruitcol):-
+    col(Fruit,Fruitcol).

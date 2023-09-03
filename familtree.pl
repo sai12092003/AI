@@ -1,0 +1,26 @@
+
+female(pam).
+female(liz).
+female(ann).
+female(pat).
+male(tom).
+male(bob).
+male(jim).
+
+
+mother(pam, bob).
+mother(liz, jim).
+mother(ann, pat).
+
+father(tom, bob).
+father(bob, jim).
+father(jim, pat).
+
+
+grandfather(X, Y) :-
+    father(X, Z),
+    father(Z, Y).
+grandmother(X, Y) :-
+    mother(X, Z),
+    mother(Z, Y).
+
